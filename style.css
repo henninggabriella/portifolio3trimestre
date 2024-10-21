@@ -1,0 +1,240 @@
+/* Estilos gerais */
+
+h1 {
+    font-family: 'Playwright England SemiJoined', cursive; /* Altere para a fonte desejada */
+    color: white; /* Cor do título */
+}
+
+/* Outros estilos permanecem iguais */
+
+body {
+    font-family: 'Work Sans', sans-serif; /* Fonte alterada */
+    background-color: #f5eee9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Header */
+header {
+    background-color: #005288;
+    text-align: center;
+    padding: 10px 0; /* Aumentado para mais espaço no cabeçalho */
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.header-content {
+    position: relative;
+}
+
+.foto-perfil {
+    width: 100px; /* Largura da foto */
+    height: auto; /* Mantém a proporção */
+    border-radius: 50%; /* Bordas arredondadas */
+    position: absolute; /* Permite posicionamento absoluto */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+}
+
+
+.menu {
+    margin-top: 20px; /* Adicione margem para o menu */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline; /* Alinha os itens do menu em linha */
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seção "Quem Sou Eu" */
+.quem-sou-eu {
+    background-color: white; /* Fundo branco */
+    border: 2px solid #2C7DA0; /* Borda azul */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Margem externa */
+    text-align: center; /* Centraliza o texto */
+}
+
+.quem-sou-eu h2 {
+    color: #2C7DA0; /* Título em azul marinho */
+}
+
+
+/* Seção de Flashcards */
+.flashcards {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+    padding: 20px;
+    background-color: white; /* Fundo branco */
+    border: 2px solid #2C7DA0; /* Borda em volta da seção */
+    margin: 20px; /* Margem externa */
+}
+
+.flashcard {
+    background-color: white;
+    border: 2px solid #2C7DA0;
+    border-radius: 10px;
+    width: 250px; /* Largura fixa */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox para alinhar itens dentro do flashcard */
+    flex-direction: column; /* Alinha a imagem e o texto em coluna */
+    align-items: center; /* Centraliza os itens */
+}
+
+.flashcard img {
+    width: 80%; /* Aumente a largura para 80% do flashcard */
+    height: auto; /* Mantém a proporção */
+    max-height: 200px; /* Define uma altura máxima */
+    object-fit: cover; /* Garante que a imagem preencha a área */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.flashcard h3 {
+    font-size: 1.5em;
+    color: #005288;
+}
+
+.flashcard p {
+    font-size: 1em;
+    color: #3d3d3d;
+}
+
+/* Seção de Projetos */
+.projects {
+    background-color: white; /* Fundo branco */
+    padding: 40px 0;
+    text-align: center;
+    display: flex; /* Adiciona flexbox */
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    border: 2px solid #2C7DA0; /* Borda em volta da seção */
+    margin: 20px; /* Margem externa */
+}
+
+.project-item {
+    display: inline-block; /* Mantém os itens na mesma linha */
+    width: 250px; /* Largura fixa */
+    height: 300px;
+    margin: 50px; /* Margem entre os projetos */
+    background-color: #fefeff; /* Cor do fundo */
+    border: 2px solid #2C7DA0; /* Borda */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.project-item img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-item h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #005288;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro para o modal */
+}
+
+.modal-content {
+    background-color: white; /* Fundo do conteúdo do modal */
+    margin: 15% auto; /* 15% do topo e centralizado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo da imagem no modal */
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #005288;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

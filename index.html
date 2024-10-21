@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memórias Escolares</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+        <link href="URL_DA_FONTE" rel="stylesheet"> <!-- Adicione aqui -->
+    </head>    
+<body>
+
+<!-- Elementos de fundo animados -->
+<div class="background-elements"></div>
+
+<!-- Cabeçalho -->
+<header>
+    <div class="header-content">
+        <h1>Minha jornada escolar</h1>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#quem-sou-eu">Quem Sou Eu</a></li>
+                <li><a href="#flashcards">Cards</a></li>
+                <li><a href="#projetos">Minhas Lembranças</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Seção "Quem Sou Eu" -->
+<section class="quem-sou-eu" id="quem-sou-eu">
+    <h2>Quem Sou Eu?</h2>
+    <p>Eu sou a Gabi Henning, tenho 16 anos. Nasci no dia 14 de outubro de 2008. Sempre amei ler e estudar, frequento a igreja desde sempre. Moro com meu pais e meus irmãos no Bairro Umbará, Curitiba-Pr.</p>
+</section>
+
+<!-- Seção de Flashcards -->
+<section class="flashcards" id="flashcards">
+    
+    <div class="flashcard">
+        <img src="image copy 6.png" alt="Flashcard 1 Imagem">
+        <p>6/08</p>
+    </div>
+    <div class="flashcard">
+        <img src="image copy 7.png" alt="Flashcard 2 Imagem">
+        <p>14/08</p>
+    </div>
+    <div class="flashcard">
+        <img src="image copy 8.png" alt="Flashcard 3 Imagem">
+        <p>26/07</p>
+    </div>
+    <div class="flashcard">
+        <img src="image copy 5.png" alt="Flashcard 3 Imagem">
+        <p>24/09</p>
+    </div>
+</section>
+
+<!-- Seção de Projetos -->
+<section class="projects" id="projetos">
+
+    <!-- Projeto 1 -->
+    <div class="project-item" onclick="openModal('projeto1')">
+        <img src="image.png" alt="Projeto 1">
+        <h3>Ensino Fundamental I</h3>
+    </div>
+
+    <!-- Projeto 2 -->
+    <div class="project-item" onclick="openModal('projeto2')">
+        <img src="image copy.png" alt="Projeto 2">
+        <h3>Ensino Fundamental II</h3>
+    </div>
+
+    <!-- Projeto 3 -->
+    <div class="project-item" onclick="openModal('projeto3')">
+        <img src="image copy 3.png" alt="Projeto 3">
+        <h3>Ensino Médio</h3>
+    </div>
+</section>
+
+<!-- Modal para exibição de projetos -->
+<div id="projeto1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('projeto1')">&times;</span>
+        <h2>Saudade</h2>
+        <p>A escola Maria Neide Gabardo Betiatto, que fica bem próxima a minha casa, foi onde eu iniciei o ensino fundamental I. E de lá que eu sinto
+            a minha maior saudade, pois mesmo com os problemas que eu enfrentava por ser criança e ainda estar aprendendo 
+            a me acostumar com a nova rotina, nela eu não tinha problemas maiores além de brincar de boneca.</p>
+        <img src="WhatsApp Image 2024-10-20 at 16.15.57.jpeg" alt="Imagem do Projeto 1" class="modal-image">
+    </div>
+</div>
+
+<div id="projeto2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('projeto2')">&times;</span>
+        <h2>PandemiaXEscola</h2>
+        <p>Em 2019, eu entrei aqui, no Colégio Estadual Padre Claúdio Morelli. Não tenho recordações do 6°Ano, mas sei que nos 2 anos próximos tivemos a pandemia e obviamente não frequentei a escola.
+            Todos os anos do meu ensino fundamental II, não fora fáceis, logo que vim de uma escola totalmente diferente, quando tinha me acostumado com a nova rotina e como o colégio
+            funcionava, tive que ficar em casa. Mas eu sei que quando retornei, conheci minhas atuais amizades.</p>
+        <img src="image copy 2.png" alt="Imagem do Projeto 2" class="modal-image">
+    </div>
+</div>
+
+<div id="projeto3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('projeto3')">&times;</span>
+        <h2>Hodiernamente</h2>
+        <p>Meu Ensino Médio foi e está sendo um período de grande aprendizagem. Infelizmente, este ano não estou mais na turma de todas as minhas amigas, mas, apesar de sentir falta, me aproximei das amizades que mais me inspiram: a Allana e a Kauani. Elas são o tipo de pessoas que influenciam, aconselham e inspiram, tanto pela inteligência quanto pela autoconfiança. Tenho receio do ano que vem, pois será meu último ano aqui, é 
+            momento de focar no meu futuro e escolher em que área vou querer atuar.</p>
+        <img src="image copy 4.png" alt="Imagem do Projeto 3" class="modal-image">
+    </div>
+</div>
+
+<script>
+    function openModal(id) {
+        document.getElementById(id).style.display = "block";
+    }
+    function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+    }
+</script>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p> Aluna: Gabriella Vitoria Henning | Colégio Estadual Padre Claúdio Morelli | N°20 | 2°D</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/gabriella.henning" target="_blank">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
